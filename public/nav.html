@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default">
+    <div class="containner-fluid">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a>
+                    <button ng-click="user.openLoginForm()" ng-show="!user.username">Login</button>
+
+                    <span ng-show="user.username">
+                        Welcom{{user.username}}
+                        <button class="btn btn-warning" ng-click="user.logout()">Logout</button>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
